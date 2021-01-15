@@ -1,0 +1,10 @@
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\bin\Debug\Calorieën-Tracker.exe.config
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\bin\Debug\Calorieën-Tracker.exe
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\bin\Debug\Calorieën-Tracker.pdb
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën-Tracker.csprojAssemblyReference.cache
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën_Tracker.Form1.resources
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën_Tracker.Properties.Resources.resources
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën-Tracker.csproj.GenerateResource.cache
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën-Tracker.csproj.CoreCompileInputs.cache
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën-Tracker.exe
+C:\Users\luke\OneDrive\Documenten\Calorieën-Tracker\Calorieën-Tracker\obj\Debug\Calorieën-Tracker.pdb

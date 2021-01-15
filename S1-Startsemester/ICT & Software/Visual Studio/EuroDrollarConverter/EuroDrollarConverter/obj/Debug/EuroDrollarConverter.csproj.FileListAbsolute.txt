@@ -1,0 +1,30 @@
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe.config
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.pdb
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csprojAssemblyReference.cache
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Form1.resources
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Properties.Resources.resources
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.GenerateResource.cache
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.CoreCompileInputs.cache
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.exe
+C:\Users\luke\OneDrive\Documenten\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe.config
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csprojAssemblyReference.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Form1.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Properties.Resources.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.GenerateResource.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.CoreCompileInputs.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe.config
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\bin\Debug\EuroDrollarConverter.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csprojAssemblyReference.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Form1.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.Properties.Resources.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.GenerateResource.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.csproj.CoreCompileInputs.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\EuroDrollarConverter\EuroDrollarConverter\obj\Debug\EuroDrollarConverter.pdb

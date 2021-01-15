@@ -1,0 +1,27 @@
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojAssemblyReference.cache
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\luke\OneDrive\Documenten\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojAssemblyReference.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojAssemblyReference.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\luke\SynologyDrive\Fontys\ICT & Software\Semester 1\Visual Studio\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
