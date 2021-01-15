@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navbar.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/general.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/index_page.css') }}">
+      <title>Challenge 3 VoIP</title>
+  </head>
+  <body>
+      <div class="nav_bar">
+          {{ nav.challenge3_navbar.render() }}
+      </div>
+      <header class="big_container_landing">
+          <div class="container_landing_box">
+              <h1 class="project">VoIP Server</h1>
+              <p class="group">3e Challenge groep 6</p>
+          </div>
+      </header>
+      <div class="container_challenge_info">
+          <div class="challenge_info_box">
+              <h1 class="title">
+                  Wat is onze challenge?
+              </h1>
+              <h5 class="intro">
+                  Wij zijn challenge groep 6, dit is onze 3e challenge die we dit semester doen. In deze challenge gaan we onderzoek doen naar VoIP en het opzetten van een VoIP server. Onze challenge heeft omvat alle focusgebieden, deze zijn programming, connecting, provisioning, securing en managing.
+              </h5>
+              <p class="information">
+                  <b>Programming:</b> Voor programming is er in python, m.b.v. flask deze webpagina gemaakt, hierop staan verschillende dingen zoals informatie over ons, informatie over de challenge en een beetje monitoring van de servers.<br>
+                  <b>Connecting:</b> Uiteraard is connecting ook een groot gedeelte van onze challenge, alle server moeten met elkaar kunnen praten en we moeten kunnen bellen via onze VoIP server.<br>
+                  <b>Provisioning:</b> Provisioning komt ook, een klein beetje, terug in het project, de server moet namelijk worden opgezet en ingesteld.<br>
+                  <b>Securing:</b> Alle communicatie moet veilig kunnen gebeuren.<br>
+                  <b>Managing:</b> Om de klantenservice in te richten wordt er ook een duidelijke en uitgebreide flowchart gemaakt, hierdoor hebben we een makkelijker beeld bij wat er gemaakt moet worden.
+              </p>
+          </div>
+      </div>
+      <div class="image">
+          <img src="/static/CSS/Logo2.jpg"/>
+      </div>
+      <footer class="powerd_by">
+          <p class="footer_names_group">
+              Deze webpagina is gemaakt door 3e challenge groep 6. Martijn Verlind, Jesper Hartsuiker, Daan de Weirdt en Luke Hendriks.
+          </p>
+      </footer>
+  </body>
+</html>

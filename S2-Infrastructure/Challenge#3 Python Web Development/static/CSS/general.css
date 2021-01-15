@@ -1,0 +1,18 @@
+li {
+    display: inline;
+    align-self: center;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    height: 1000px;
+}
+
+img {
+    height: 275px;
+    width: 275px;
+    display: inline;
+    position: relative;
+}

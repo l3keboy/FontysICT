@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navbar.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/general.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/status_page.css') }}">
+      <title>Challenge 3 VoIP</title>
+  </head>
+  <body>
+      <div class="nav_bar">
+          {{ nav.challenge3_navbar.render() }}
+      </div>
+      <div class="container_voip_server_status">
+          <div class="voip_server_status">
+              {{voip_server_status}}
+          </div>
+      </div>
+      <div class="container_network_ping">
+          <div class="network_ping">
+              Ping: {{network_ping}} ms
+          </div>
+      </div>
+      <div class="container_download">
+          <div class="download">
+              Download: {{download}} Mbps
+          </div>
+      </div>
+      <div class="container_upload">
+          <div class="upload">
+              Upload: {{upload}} Mbps
+          </div>
+      </div>
+      <footer class="powerd_by">
+          <p class="footer_names_group">
+              Deze webpagina is gemaakt door 3e challenge groep 6. Martijn Verlind, Jesper Hartsuiker, Daan de Weirdt en Luke Hendriks.
+          </p>
+      </footer>
+  </body>
+</html>

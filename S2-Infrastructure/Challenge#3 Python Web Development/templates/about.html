@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/navbar.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/general.css') }}">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/about_page.css') }}">
+      <title>Challenge 3 VoIP</title>
+  </head>
+  <body>
+      <div class="nav_bar">
+              {{ nav.challenge3_navbar.render() }}
+      </div>
+      <div class="grid_container">
+          <div class="grid_about_daan">
+              <h1 class="about_daan_title">Over Daan de Weirdt</h1>
+              <h5 class="about_daan_subtitle">Ik ben student infrastructuur aan de Fontys hogeschool ict. Ik ben erg geïnteresseerd in ict, al een tijdje speel ik met verschillende Linuxsystemen en ander ict speelgoed.</h5>
+              <p class="about_daan_text">Het project over de VOIP server vond ik een interessant project omdat ik wilde ervaren welke problemen er zijn bij het opzetten en onderhouden van een VOIP systeem. Daarnaast heb ik kennis opgedaan over verschillende voip software pakketten. En heb ik veel geleerd over wat problemen bij de geluidskwaliteit of connectiviteit kunnen veroorzaken.</p>
+          </div>
+          <div class="grid_about_martijn">
+              <h1 class="about_martijn_title">Over Martijn Verlind</h1>
+              <h5 class="about_martijn_subtitle">Mijn naam is Martijn Verlind, voordat ik op Fontys kwam heb ik bij ROC Tilburg MBO niveau 4 Systeembeheer gedaan. Tijdens deze opleiding heb ik veel ervaring opgedaan met het omzetten van klantgesprekken naar IT oplossingen. In deze projecten heb ik veel met Windows Server gebaseerde systemen gewerkt en met een Hypervisor. Tijdens het eerste semester heb ik mijn kennis weer opgefrist en heb ik veel gewerkt met verschillende (besturings)-systemen.</h5>
+              <p class="about_martijn_text">De VoIP challenge, was een erg leuke en leerzame uitdaging.</p>
+          </div>
+          <div class="grid_about_jesper">
+              <h1 class="about_jesper_title">Over Jesper Hartsuiker</h1>
+              <h5 class="about_jesper_subtitle">Ik ben Jesper Hartsuiker. Ben 18 jaar. Ik woon nu in Udenhout voor een lange tijd. Ik heb voor deze opleiding HAVO gedaan op het cobbenhagenlyceum hier in Tilburg. Ik heb hier 6 jaar over gedaan, aangezien ik 1 keer ben blijven zitten. Ik had voor ik naar deze opleiding heel weinig ervaring met programmeren en servers opzetten. Dus dat was een grote uitdaging voor mij om zo te starten op deze opleiding.</h5>
+              <p class="about_jesper_text">Ik vond deze challenge best uitdagend en ook leuk. Daarnaast heb ik ook weer extra dingen geleerd over hoe je voip opzet en gebruikt.</p>
+          </div>
+          <div class="grid_about_luke">
+              <h1 class="about_luke_title">Over Luke Hendriks</h1>
+              <h5 class="about_luke_subtitle">Ik ben Luke Hendriks, ik kom van de HAVO. Ik heb geen programmeerervaring, ik heb zowel op school als in mijn vrije tijd niet veel aandacht besteed aan programmeren of andere dingen met betrekking tot infrastructuur, het enige wat ik op school heb gedaan is een kleine beginners cursus arduino, hierin hebben we de basisdingen van een arduino geleerd. </h5>
+              <p class="about_luke_text">Het project over de VoIP Server (voor mij Challenge 3) vond ik een erg leuk en leerzaam project. Ik heb hier veel verschillende dingen geleerd over VoIP. Ook ben ik, samen met mijn groepje, aan de slag gegaan met Python, HTML en CSS, hiermee is namelijk deze website gemaakt!</p>
+          </div>
+      </div>
+      <footer class="powerd_by">
+          <p class="footer_names_group">
+              Deze webpagina is gemaakt door 3e challenge groep 6. Martijn Verlind, Jesper Hartsuiker, Daan de Weirdt en Luke Hendriks.
+          </p>
+      </footer>
+  </body>
+</html>
