@@ -1,0 +1,17 @@
+# Debian Install Packetbeat
+- name: REDHAT Install Packetbeat
+  yum:
+    name: "packetbeat"
+    state: latest
+  notify:
+  - enable-packetbeat-redhat
+
+# Move config file to remote server
+- name: REDHAT Move Packetbeat configuration file
+  copy: src=/etc/ansible/roles/packetbeat/packetbeat_config/packetbeat.yml dest=/etc/packetbeat/packetbeat.yml
+
+# Start Packetbeat
+- name: REDHAT Start Packetbeat
+  service:
+    name: "packetbeat"
+    state: started

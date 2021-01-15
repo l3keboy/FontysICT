@@ -1,0 +1,25 @@
+# === DEBIAN === #
+# Enable SNTP on boot
+- name: enable-ntp-debian
+  service:
+    name: "ntp"
+    enabled: yes
+
+# Start SNTP
+- name: start-ntp-debian
+  systemd:
+    name: "ntp"
+    state: started
+
+# === REDHAT === #
+# Start Chrony on boot
+- name: enable-chrony-redhat
+  service:
+    name:  "chronyd"
+    enabled: yes
+
+# Start NTPD
+- name: start-chrony-redhat
+  systemd:
+    name: "chronyd"
+    state: started

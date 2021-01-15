@@ -1,0 +1,5 @@
+# Install Java Redhat
+- name: REDHAT Install Java
+  yum:
+    name: "java"
+    state: present

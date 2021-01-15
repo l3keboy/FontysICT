@@ -1,0 +1,6 @@
+# === REDHAT === #
+# Reload firewall
+- name: reload-firewalld
+  systemd:
+    name: firewalld
+    state: reloaded

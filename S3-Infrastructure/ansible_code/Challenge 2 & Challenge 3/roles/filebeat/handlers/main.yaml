@@ -1,0 +1,13 @@
+# === DEBIAN === #
+# Start Filebeat on boot
+- name: enable-filebeat-debian
+  service:
+    name: "filebeat"
+    enabled: yes
+
+# === REDHAT === #
+# Start Filebeat on boot
+- name: enable-filebeat-redhat
+  service:
+    name: "filebeat"
+    enabled: yes

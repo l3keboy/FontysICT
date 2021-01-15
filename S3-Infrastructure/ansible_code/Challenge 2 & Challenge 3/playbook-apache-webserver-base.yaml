@@ -1,0 +1,19 @@
+- hosts: webservers
+  become: yes
+  roles:
+  - linux-common
+  - firewall-common
+
+- hosts: webservers
+  become: yes
+  roles:
+  - apache-webserver
+  - firewall-web
+
+- hosts: webservers
+  become: yes
+  roles:
+  - java
+  - elk-rep
+  - filebeat
+  - metricbeat

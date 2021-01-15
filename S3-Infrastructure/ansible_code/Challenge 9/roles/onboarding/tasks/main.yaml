@@ -1,0 +1,18 @@
+
+- name: Adding the user "{{ firstname }}"
+  community.windows.win_domain_user:
+    name: "{{ firstname }}"
+    firstname: "{{ firstname }}"
+    surname: "{{ lastname }}"
+    company: "Men nie belle B.V."
+    password: "{{ password }}"
+    state: present
+    groups:
+      - Domain Users
+    group_action: add
+    path: cn=Users,dc=automation,dc=localdomain
+    upn: "{{ username }}@automation.localdomain"
+    postal_code: "{{ postalcode }}"
+    country: "{{ country }}"
+    attributes:
+      telephoneNumber: "{{ phonenumber }}"

@@ -1,0 +1,6 @@
+- name: If OS is debian based
+  import_tasks: debian-metricbeat.yaml
+  when: ansible_facts['os_family']|lower == 'debian'
+- name: If OS is redhat based
+  import_tasks: redhat-metricbeat.yaml
+  when: ansible_facts['os_family']|lower == 'redhat'

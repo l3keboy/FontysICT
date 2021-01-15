@@ -1,0 +1,13 @@
+- hosts: confservers
+  become: yes
+  roles:
+  - linux-common
+  - firewall-common
+
+- hosts: confservers
+  become: yes
+  roles:
+  - java
+  - elk-rep
+  - filebeat
+  - metricbeat

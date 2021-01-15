@@ -1,0 +1,6 @@
+# Install Java on Debian
+- name: DEBIAN Install Java
+  apt:
+    name: "default-jre"
+    state: present
+

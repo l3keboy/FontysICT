@@ -1,0 +1,8 @@
+- hosts: siemservers
+  become: yes
+  roles:
+  - java
+  - elk-rep
+  - filebeat
+  - metricbeat
+  - packetbeat

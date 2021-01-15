@@ -1,0 +1,26 @@
+# Install net-tools to use ifconfig
+- name: DEBIAN Install net-tools
+  apt:
+    name: "net-tools"
+    state: latest
+
+# Install tree to get directory tree overview
+- name: DEBIAN Install tree
+  apt:
+    name: "tree"
+    state: latest
+
+# Install nano
+- name: DEBIAN Install nano
+  apt:
+    name: "nano"
+    state: latest
+
+# Install SNTP
+- name: DEBIAN Install sntp
+  apt:
+    name: "ntp"
+    state: latest
+  notify:
+  - enable-ntp-debian
+  - start-ntp-debian

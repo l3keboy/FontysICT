@@ -1,0 +1,37 @@
+# === DEBIAN === #
+# Start apache on boot
+- name: enable-apache
+  service:
+    name: "apache2"
+    enabled: yes
+
+# Start apache
+- name: start-apache
+  service:
+    name: "apache2"
+    state: started
+
+# Restart apache
+- name: restart-apache
+  service:
+    name: "apache2"
+    state: restarted
+
+# === REDHAT === #
+# Start httpd on boot
+- name: enable-httpd
+  service:
+    name: "httpd"
+    enabled: yes
+
+# Start httpd
+- name: start-httpd
+  service:
+    name: "httpd"
+    state: started
+
+# Restart httpd
+- name: restart-httpd
+  service:
+    name: "httpd"
+    state: restarted

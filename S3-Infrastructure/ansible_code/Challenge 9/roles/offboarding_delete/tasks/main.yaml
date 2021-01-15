@@ -1,0 +1,6 @@
+- name: Removing the user "{{ firstname }}"
+  community.windows.win_domain_user:
+    name: "{{ firstname }}"
+    firstname: "{{ firstname }}"
+    surname: "{{ lastname }}"
+    state: absent

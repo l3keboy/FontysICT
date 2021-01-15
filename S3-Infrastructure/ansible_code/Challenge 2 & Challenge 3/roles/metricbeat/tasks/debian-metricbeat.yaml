@@ -1,0 +1,28 @@
+# Debian Install Metricbeat
+- name: DEBIAN Install Metricbeat
+  apt:
+    name: "metricbeat"
+    state: latest
+  notify:
+  - enable-metricbeat-debian
+
+# Move config file to remote server
+- name: DEBIAN Move Metricbeat configuration file
+  copy: src=/etc/ansible/roles/metricbeat/metricbeat_config/metricbeat.yml dest=/etc/metricbeat/metricbeat.yml
+
+# Enable System Module
+- name: DEBIAN Metricbeat enable system module
+  become: yes
+  shell: metricbeat modules enable system
+
+# Enable Apache Module
+- name: DEBIAN Metricbeat enable apache module
+  become: yes
+  shell: metricbeat modules enable apache
+  when: "'webservers' in group_names"
+
+# Start Metricbeat
+- name: DEBIAN Start Metricbeat
+  service:
+    name: "metricbeat"
+    state: started

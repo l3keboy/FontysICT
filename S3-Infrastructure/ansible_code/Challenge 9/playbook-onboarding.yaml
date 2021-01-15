@@ -1,0 +1,43 @@
+- hosts: domaincontrollers
+  vars_prompt:
+    # Create username variable
+    - name: username
+      private: no
+      prompt: "Enter the username of the user"
+      
+    # Create firstname variable
+    - name: firstname
+      private: no
+      prompt: "Enter the first name of the user"
+
+    # Create lastname variable
+    - name: lastname
+      private: no
+      prompt: "Enter the lastname name of the user"
+
+    # Create password variable
+    - name: password
+      private: yes
+      prompt: "Enter the users password"
+      #encrypt: "sha512_crypt"
+      confirm: yes
+      #salt_size: 7
+
+    # Create country variable
+    - name: country
+      private: no
+      prompt: "Enter the country (f.e. NL or US)"
+
+    # Create postalcode variable
+    - name: postalcode
+      private: no
+      prompt: "Enter the postal code of the user"
+
+    # Create phonenumber variable
+    - name: phonenumber
+      private: no
+      prompt: "Enter the users phone number"
+
+  roles:
+  - onboarding
+

@@ -1,0 +1,27 @@
+# Install httpd
+- name: REDHAT Install httpd
+  yum:
+    name: "httpd"
+    state: present
+  notify:
+  - enable-httpd
+  - start-httpd
+
+# Make Dir
+- name: REDHAT Make /sites-available dir
+  file:
+    path: /etc/httpd/sites-available
+    state: directory
+
+# Replace default httpd conf
+- name: REDHAT Move httpd default conf
+  template: src=/etc/ansible/roles/apache-webserver/apache_config/httpd.conf dest=/etc/httpd/sites-available/virtualhost.conf
+  notify:
+  - restart-httpd
+
+# Replace html page
+- name: REDHAT Move index.html
+  template: src=/etc/ansible/roles/apache-webserver/apache_config/index.html dest=/var/www/html/
+  notify:
+  - restart-httpd
+

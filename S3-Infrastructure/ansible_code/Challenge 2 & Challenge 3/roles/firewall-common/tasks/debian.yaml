@@ -1,0 +1,17 @@
+# Install UFW
+- name: DEBIAN Install UFW
+  apt:
+    name: "ufw"
+    state: latest
+
+# Open SSH port
+- name: DEBIAN Open port 22 (SSH)
+  ufw:
+    rule: allow
+    port: '22'
+
+# Enable UFW
+- name: DEBIAN Enable UFW
+  ufw:
+    state: enabled
+    policy: deny

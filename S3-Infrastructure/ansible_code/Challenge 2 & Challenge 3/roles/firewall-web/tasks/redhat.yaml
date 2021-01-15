@@ -1,0 +1,17 @@
+# Open port 80 web
+- name: REDHAT Open port 80 (WEB)
+  firewalld:
+    port: 80/tcp
+    permanent: yes
+    state: enabled
+  notify:
+    - reload-firewalld
+
+# Open port 443
+- name: REDHAT Open port 443 (WEB)
+  firewalld:
+    port: 443/tcp
+    permanent: yes
+    state: enabled
+  notify:
+    - reload-firewalld

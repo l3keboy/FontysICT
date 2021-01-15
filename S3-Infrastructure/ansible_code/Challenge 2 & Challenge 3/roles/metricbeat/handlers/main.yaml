@@ -1,0 +1,13 @@
+# === DEBIAN === #
+# Start Metricbeat on boot
+- name: enable-metricbeat-debian
+  service:
+    name: "metricbeat"
+    enabled: yes
+
+# === REDHAT === #
+# Start Metricbeat on boot
+- name: enable-metricbeat-redhat
+  service:
+    name: "metricbeat"
+    enabled: yes

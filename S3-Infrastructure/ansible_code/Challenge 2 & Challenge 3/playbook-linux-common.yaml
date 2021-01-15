@@ -1,0 +1,5 @@
+- hosts: linuxhosts
+  become: yes
+  roles:
+  - linux-common
+  - firewall-common

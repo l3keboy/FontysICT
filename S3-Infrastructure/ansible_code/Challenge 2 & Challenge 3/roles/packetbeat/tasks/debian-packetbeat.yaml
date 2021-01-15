@@ -1,0 +1,17 @@
+# Debian Install Packetbeat
+- name: DEBIAN Install Packetbeat
+  apt:
+    name: "packetbeat"
+    state: latest
+  notify:
+  - enable-packetbeat-debian
+
+# Move config file to remote server
+- name: DEBIAN Move packetbeat configuration file
+  copy: src=/etc/ansible/roles/packetbeat/packetbeat_config/packetbeat.yml dest=/etc/packetbeat/packetbeat.yml
+
+# Start Packetbeat
+- name: DEBIAN Start Packetbeat
+  service:
+    name: "packetbeat"
+    state: started

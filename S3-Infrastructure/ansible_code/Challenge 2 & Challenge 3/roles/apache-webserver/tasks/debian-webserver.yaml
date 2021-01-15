@@ -1,0 +1,20 @@
+# Install apache2
+- name: DEBIAN Install apache2
+  apt:
+    name: "apache2"
+    state: present
+  notify:
+  - enable-apache
+  - start-apache
+
+# Replace default apache2 conf
+- name: DEBIAN Move apache default conf
+  template: src=/etc/ansible/roles/apache-webserver/apache_config/httpd.conf dest=/etc/apache2/sites-available/000-default.conf
+  notify:
+  - restart-apache
+
+# Replace html page
+- name: DEBIAN Move index.html
+  template: src=/etc/ansible/roles/apache-webserver/apache_config/index.html dest=/var/www/html/
+  notify:
+  - restart-apache

@@ -1,0 +1,11 @@
+# Open port 80 (HTTP)
+- name: DEBIAN Open port 80 (HTTP)
+  ufw:
+    rule: allow
+    port: '80'
+
+# Open port 443 (HTTPS)
+- name: DEBIAN Open port 443 (HTTPS)
+  ufw:
+    rule: allow
+    port: '443'

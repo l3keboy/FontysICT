@@ -1,0 +1,28 @@
+# Install Filebeat Redhat
+- name: REDHAT Install filebeat
+  yum:
+    name: "filebeat"
+    state: latest
+  notify:
+  - enable-filebeat-redhat
+
+# Copy Filebeat config to remote server
+- name: REDHAT Copy Filebeat Configuration
+  copy: src=/etc/ansible/roles/filebeat/filebeat_config/filebeat.yml dest=/etc/filebeat/filebeat.yml
+
+# Enable system logs in filebeat
+- name: REDHAT Enable Filebeat Module
+  become: yes
+  shell: filebeat modules enable system
+
+# Enable apache logs in Filebeat
+- name: REDHAT Filebeat enable apache module
+  become: yes
+  shell: filebeat modules enable apache
+  when: "'webservers' in group_names"
+
+# Start Filebeat
+- name: REDHAT Start Filebeat
+  service:
+    name: "filebeat"
+    state: started

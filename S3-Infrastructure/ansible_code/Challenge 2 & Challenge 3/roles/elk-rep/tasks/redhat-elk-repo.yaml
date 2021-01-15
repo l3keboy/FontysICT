@@ -1,0 +1,8 @@
+# Add GPG Key and Repostory to YUM
+- name: REDHAT Add ELK Stack Repository
+  yum_repository:
+    name: elastic
+    description: elastic repo
+    gpgcheck: yes
+    gpgkey: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    baseurl: https://artifacts.elastic.co/packages/7.x/yum

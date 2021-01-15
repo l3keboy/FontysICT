@@ -1,0 +1,13 @@
+# === DEBIAN === #
+# Start Packetbeat on boot
+- name: enable-packetbeat-debian
+  service:
+    name: "packetbeat"
+    enabled: yes
+
+# === REDHAT === #
+# Start Packetbeat on boot
+- name: enable-packetbeat-redhat
+  service:
+    name: "packetbeat"
+    enabled: yes

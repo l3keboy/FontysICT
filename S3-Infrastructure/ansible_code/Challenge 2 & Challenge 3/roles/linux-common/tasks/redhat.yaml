@@ -1,0 +1,32 @@
+# Install epel-release Redhat
+- name: REDHAT Install Epel-release
+  yum:
+    name: "epel-release"
+    state: latest
+
+# Install net-tools to use ifconfig
+- name: REDHAT Install net-tools
+  yum:
+    name: "net-tools"
+    state: latest
+
+# Install tree to get directory tree overview
+- name: REDHAT Install tree
+  yum:
+    name: "tree"
+    state: latest
+
+# Install nano
+- name: REDHAT Install nano
+  yum:
+    name: "nano"
+    state: latest
+
+# Install Chrony (NTP)
+- name: REDHAT Install Chrony
+  yum:
+    name: "chrony"
+    state: latest
+  notify:
+  - enable-chrony-redhat
+  - start-chrony-redhat

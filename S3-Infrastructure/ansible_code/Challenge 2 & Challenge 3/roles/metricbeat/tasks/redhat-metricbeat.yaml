@@ -1,0 +1,28 @@
+# Debian Install Metricbeat
+- name: REDHAT Install Metricbeat
+  yum:
+    name: "metricbeat"
+    state: latest
+  notify:
+  - enable-metricbeat-redhat
+
+# Move config file to remote server
+- name: REDHAT Move Metricbeat configuration file
+  copy: src=/etc/ansible/roles/metricbeat/metricbeat_config/metricbeat.yml dest=/etc/metricbeat/metricbeat.yml
+
+# Enable System Module
+- name: REDHAT Metricbeat enable system module
+  become: yes
+  shell: metricbeat modules enable system
+
+# Enable Apache Module
+- name: REDHAT Metricbeat enable apache module
+  become: yes
+  shell: metricbeat modules enable apache
+  when: "'webservers' in group_names"
+
+# Start Metricbeat
+- name: REDHAT Start Metricbeat
+  service:
+    name: "metricbeat"
+    state: started

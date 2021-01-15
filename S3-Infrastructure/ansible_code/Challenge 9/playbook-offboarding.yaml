@@ -1,0 +1,14 @@
+- hosts: domaincontrollers
+  vars_prompt:
+    # Create firstname variable
+    - name: firstname
+      private: no
+      prompt: "Enter the first name of the user"
+
+    # Create lastname variable
+    - name: lastname
+      private: no
+      prompt: "Enter the lastname name of the user"
+
+  roles:
+  - offboarding

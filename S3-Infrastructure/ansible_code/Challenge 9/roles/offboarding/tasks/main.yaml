@@ -1,0 +1,7 @@
+- name: Deactivating the user "{{ firstname }}"
+  community.windows.win_domain_user:
+    name: "{{ firstname }}"
+    firstname: "{{ firstname }}"
+    surname: "{{ lastname }}"
+    state: present
+    enabled: no
