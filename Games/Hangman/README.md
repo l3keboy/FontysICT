@@ -1,0 +1,2 @@
+## Info
+Singleplayer Hangman Game.
