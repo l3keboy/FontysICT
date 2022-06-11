@@ -1,0 +1,44 @@
+---
+# Create user for ansible
+- name: "Create user for Ansible"
+  ansible.builtin.user:
+    name: "{{ new_ansible_user }}"
+    state: present
+    create_home: true
+    shell: /bin/bash
+  tags:
+    - user
+    - create
+
+# Set authorized_keys for user
+- name: "Copy authorized key for Ansible user"
+  ansible.posix.authorized_key:
+    user: "{{ new_ansible_user }}"
+    state: present
+    key: "{{ ssh_public_key }}"
+  tags:
+    - user
+    - authorized_keys
+
+# Disable password Auth for root
+- name: "Disable password authentication for root"
+  ansible.builtin.lineinfile:
+    path: /etc/ssh/sshd_config
+    state: present
+    regexp: '^#?PermitRootLogin'
+    line: 'PermitRootLogin prohibit-password'
+  tags:
+    - password_authentication
+
+# Allow Ansible user to use sudo without password
+- name: "Allow Ansible user to have passwordless sudo"
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^{{ new_ansible_user }}'
+    line: '{{ new_ansible_user }} ALL=(ALL) NOPASSWD: ALL'
+    validate: '/usr/sbin/visudo -cf %s'
+  tags:
+    - user
+    - sudo
+  

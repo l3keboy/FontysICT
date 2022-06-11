@@ -1,0 +1,7 @@
+---
+# Reboot
+- name: "Reboot target server"
+  ansible.builtin.reboot:
+    msg: "Configuration changed or reboot requested by an admin!"
+  tags:
+    - reboot

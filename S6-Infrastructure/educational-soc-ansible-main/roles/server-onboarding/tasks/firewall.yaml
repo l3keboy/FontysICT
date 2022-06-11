@@ -1,0 +1,63 @@
+---
+### DEBIAN ###
+# Make sure UFW is installed (debian)
+- name: "Check if UFW is installed"
+  ansible.builtin.apt:
+    name: ufw
+    state: latest
+  when: ansible_facts['os_family']|lower == 'debian'
+
+# Allow OpenSSH through UFW (debian)
+- name: "UFW - Allow SSH Connections"
+  community.general.ufw:
+    rule: allow
+    name: OpenSSH
+  when: ansible_facts['os_family']|lower == 'debian'
+
+# Turn on UFW (debian)
+- name: "UFW - Turn on"
+  community.general.ufw:
+    state: enabled
+    policy: deny
+  when: ansible_facts['os_family']|lower == 'debian'
+
+# Enable UFW (debian)
+- name: "UFW - Enable"
+  ansible.builtin.service:
+    name: ufw
+    enabled: yes
+  when: ansible_facts['os_family']|lower == 'debian'
+
+
+### REDHAT ###
+# Make sure Firewalld is installed (redhat)
+- name: "Check if Firewalld is installed"
+  ansible.builtin.yum:
+    name: firewalld
+    state: latest
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+# Allow OpenSSH through Firewalld (redhat)
+- name: "Firewalld - Allow SSH Connections"
+  ansible.posix.firewalld:
+    port: 22/tcp
+    permanent: yes
+    state: enabled
+  when: ansible_facts['os_family']|lower == 'redhat'
+  notify:
+    - Restart Firewalld
+
+# Turn on Firewalld (redhat)
+- name: "Firewalld - Turn on"
+  ansible.builtin.service:
+    name: firewalld
+    state: started
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+# Enable Firewalld (redhat)
+- name: "Firewalld - Enable"
+  ansible.builtin.service:
+    name: firewalld
+    enabled: yes
+  when: ansible_facts['os_family']|lower == 'redhat'
+

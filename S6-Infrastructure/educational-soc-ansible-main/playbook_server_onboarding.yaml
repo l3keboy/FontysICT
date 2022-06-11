@@ -1,0 +1,12 @@
+---
+- name: "Onboard new server"
+  hosts: "{{ target_server }}"
+  vars:
+    ansible_user: "{{ default_username }}"
+    ansible_password: "{{ default_password }}"
+    ansible_become_password: "{{ default_password }}"
+  vars_files:
+    - roles/server-onboarding/vars/defaults.yaml
+  become: yes
+  roles:
+    - server-onboarding

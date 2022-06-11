@@ -1,0 +1,11 @@
+---
+- name: "Configure or modify main dashboard"
+  hosts: |
+    {% if "{{ target_dashboard }}" == "all" %}
+      dashboards
+    {% else %}
+      {{ target_dashboard }}
+    {% endif %}
+  become: yes
+  roles:
+    - main-dashboards

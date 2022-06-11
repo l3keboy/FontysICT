@@ -1,0 +1,24 @@
+[siem]
+esoc-kib01-til-p8-vm-0018 ansible_host=192.168.50.50
+esoc-flt01-til-p8-vm-0019 ansible_host=192.168.50.60
+esoc-es01-til-p8-vm-0020 ansible_host=192.168.50.70
+esoc-es02-til-p8-vm-0028 ansible_host=192.168.50.71
+esoc-es03-til-p8-vm-0029 ansible_host=192.168.50.72
+
+[suricata]
+esoc-sur01-til-p8-vm-0027 ansible_host=192.168.50.80
+
+[mon]
+esoc-mon01-til-p8-vm-0015 ansible_host=192.168.50.1
+
+[automation]
+esoc-as01-til-p8-vm-0016 ansible_host=localhost
+
+[support]
+esoc-ts01-til-p8-vm-0017 ansible_host=192.168.50.16
+
+[dashboards]
+esoc-sdb01-til-p8-ph-0021 ansible_host=192.168.51.1 ansible_python_interpreter=auto_silent
+esoc-sdb02-til-p8-ph-0022 ansible_host=192.168.51.2 ansible_python_interpreter=auto_silent
+esoc-ndb01-til-p8-ph-0023 ansible_host=192.168.51.3 ansible_python_interpreter=auto_silent
+esoc-ndb02-til-p8-ph-0024 ansible_host=192.168.51.4 ansible_python_interpreter=auto_silent

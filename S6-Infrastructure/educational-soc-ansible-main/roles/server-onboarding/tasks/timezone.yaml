@@ -1,0 +1,7 @@
+---
+# Timezone
+- name: "Set timezone on target server"
+  community.general.timezone:
+    name: Europe/Amsterdam
+  tags:
+    - timezone

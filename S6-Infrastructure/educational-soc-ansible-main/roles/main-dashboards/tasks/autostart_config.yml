@@ -1,0 +1,19 @@
+---
+# Copy autostart config
+- name: "Copy autostart configuration"
+  block:
+    - name: "Debug message"
+      ansible.builtin.debug:
+        msg: "Copying autostart config!"
+    - name: "Ensure path (/etc/xdg/lxsession/LXDE-pi/) exists"
+      ansible.builtin.file:
+        path: /etc/xdg/lxsession/LXDE-pi/
+        state: directory
+    - name: "Copy autostart config"
+      ansible.builtin.template:
+        dest: /etc/xdg/lxsession/LXDE-pi/autostart
+        src: ./configs/autostart
+        force: yes
+  tags:
+    - configure
+    - modify

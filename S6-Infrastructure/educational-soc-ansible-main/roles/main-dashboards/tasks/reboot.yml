@@ -1,0 +1,8 @@
+---
+# Reboot
+- name: "Reboot main dashboard"
+  ansible.builtin.reboot:
+    msg: "Configuration changed or reboot requested by an admin!"
+  when: type|lower == "configure" or type|lower == "modify" or type|lower == "reboot"
+  tags:
+    - reboot

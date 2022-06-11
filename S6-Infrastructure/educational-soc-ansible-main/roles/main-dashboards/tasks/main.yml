@@ -1,0 +1,22 @@
+---
+# Print variables
+- name: "Print variables"
+  ansible.builtin.debug:
+    msg: "Selected target dashboard: {{ target_dashboard }} -- Selected type: {{ type }} -- Selected target url: {{ target_url }}"
+
+# Run required tasks
+- name: "Run chromium tasks"
+  import_tasks: chromium.yml
+  when: type|lower == "configure"
+
+- name: "Run autostart tasks"
+  import_tasks: autostart_config.yml
+  when: type|lower == "configure" or type|lower == "modify"
+  
+- name: "Run reboot tasks"
+  import_tasks: reboot.yml
+  when: type|lower == "configure" or type|lower == "modify" or type|lower == "reboot"
+
+- name: "Run HDMI tasks"
+  import_tasks: hdmi.yml
+  when: type|lower == "turn on hdmi" or type|lower == "turn off hdmi"

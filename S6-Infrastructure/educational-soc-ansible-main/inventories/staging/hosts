@@ -1,0 +1,8 @@
+[dashboards]
+esoc-sdb01-til-p8-ph-0021 ansible_host=192.168.51.1 ansible_python_interpreter=auto_silent
+esoc-sdb02-til-p8-ph-0022 ansible_host=192.168.51.2 ansible_python_interpreter=auto_silent
+esoc-ndb01-til-p8-ph-0023 ansible_host=192.168.51.3 ansible_python_interpreter=auto_silent
+esoc-ndb02-til-p8-ph-0024 ansible_host=192.168.51.4 ansible_python_interpreter=auto_silent
+
+[onboarding]
+test-esoc-onboarding ansible_host=192.168.50.153

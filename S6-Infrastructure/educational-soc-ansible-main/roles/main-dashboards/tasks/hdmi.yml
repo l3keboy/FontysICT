@@ -1,0 +1,16 @@
+---
+# Turn on HDMI
+- name: "Turn on HDMI"
+  ansible.builtin.shell:
+    cmd: export DISPLAY=:0 && xset q && xset dpms force on
+  when: type|lower == "turn on hdmi"
+  tags:
+    - turn on hdmi
+
+# Turn off HDMI
+- name: "Turn off HDMI"
+  ansible.builtin.shell:
+    cmd: export DISPLAY=:0 && xset q && xset dpms force standby
+  when: type|lower == "turn off hdmi"
+  tags:
+    - turn off hdmi

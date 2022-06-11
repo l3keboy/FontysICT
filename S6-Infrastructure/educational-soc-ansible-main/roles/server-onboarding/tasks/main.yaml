@@ -1,0 +1,27 @@
+---
+# Print variables
+- name: "Print variables"
+  ansible.builtin.debug:
+    msg: "Selected target server: {{ target_server }}"
+
+# Run user task
+- name: "Configure user on Linux based target server"
+  import_tasks: user_linux.yaml
+  when: ansible_facts['os_family']|lower != 'windows'
+
+# Run firewall task
+- name: "Configure firewall"
+  import_tasks: firewall.yaml
+
+# Run main dashboard task
+- name: "Extra configuration for dashboards"
+  import_tasks: main_dashboards.yaml
+  when: target_server == "esoc-sdb01-til-p8-ph-0021" or target_server == "esoc-sdb02-til-p8-ph-0022" or target_server == "esoc-ndb01-til-p8-ph-0023" or target_server == "esoc-ndb02-til-p8-ph-0024"
+
+# Run timezone task
+- name: "Configure timezone"
+  import_tasks: timezone.yaml
+
+# Run reboot task
+- name: "Reboot host"
+  import_tasks: reboot.yaml

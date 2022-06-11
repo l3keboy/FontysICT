@@ -1,0 +1,7 @@
+---
+# Reload Firewalld
+- name: "Restart Firewalld"
+  ansible.builtin.systemd:
+    name: firewalld
+    state: reloaded
+  when: ansible_facts['os_family']|lower == 'redhat'

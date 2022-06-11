@@ -1,0 +1,14 @@
+---
+# Install the chromium webbrowser
+- name: "Install Chromium webbrowser"
+  block:
+    - name: "Debug message"
+      ansible.builtin.debug:
+        msg: "Installing the Chromium webbrowser!"
+    - name: "Install requirements"
+      ansible.builtin.apt:
+        update_cache: yes
+        name:
+          - rpi-chromium-mods
+  tags:
+    - configure

@@ -1,0 +1,5 @@
+# Turn on HDMI port
+30 8 * * * /home/ansible/hdmi_on_cron_script.sh
+
+# Turn off HDMI port
+* 17 * * * /home/ansible/hdmi_off_cron_script.sh

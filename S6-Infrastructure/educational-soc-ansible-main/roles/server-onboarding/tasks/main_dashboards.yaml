@@ -1,0 +1,53 @@
+---
+# Edit /etc/profile for persistant xhost
+- name: "Edit /etc/profile for persistant xhost"
+  ansible.builtin.blockinfile:
+    path: /etc/profile
+    block: "{{ lookup('file', './configs/xhost_profile') }}"
+  tags:
+    - xhost
+    - profile
+
+# Copy HDMI Cronjob files
+- name: "Copy HDMI Cronjob files"
+  block:
+    - name: "Ensure path (/home/ansible) exists"
+      ansible.builtin.file:
+        path: /home/ansible
+        state: directory
+      tags:
+        - cron
+    - name: "Copy cronjob script on"
+      ansible.builtin.copy:
+        dest: /home/ansible/hdmi_on_cron_script.sh
+        src: ./configs/cron/hdmi_on_cron_script.sh
+        force: yes
+        mode: 0700
+      tags:
+        - cron
+    - name: "Copy cronjob script off"
+      ansible.builtin.copy:
+        dest: /home/ansible/hdmi_off_cron_script.sh
+        src: ./configs/cron/hdmi_off_cron_script.sh
+        force: yes
+        mode: 0700
+      tags:
+        - cron
+    - name: "Ensure path (/etc/cron.d) exists"
+      ansible.builtin.file:
+        path: /etc/cron.d
+        state: directory
+      tags:
+        - cron
+    - name: "Copy cronjob file"
+      ansible.builtin.copy:
+        dest: /etc/cron.d/hdmi_cron
+        src: ./configs/cron/hdmi_cron
+        force: yes
+      tags:
+        - cron
+    - name: "Add cronjob file to cron"
+      ansible.builtin.command:
+        cmd: crontab /etc/cron.d/hdmi_cron
+      tags:
+        - cron
