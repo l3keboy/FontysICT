@@ -1,5 +1,7 @@
 # Turn on HDMI port
-30 8 * * * /home/ansible/hdmi_on_cron_script.sh
+# 30 8 * * * /home/ansible/hdmi_on_cron_script.sh  # DEPRECATED (OLD CONFIG STILL AVAILABLE IN ANSIBLE)
+30 8 * * * vcgencmd display_power 1
 
 # Turn off HDMI port
-* 17 * * * /home/ansible/hdmi_off_cron_script.sh
+# * 17 * * * /home/ansible/hdmi_off_cron_script.sh  # DEPRECATED (OLD CONFIG STILL AVAILABLE IN ANSIBLE)
+* 17 * * * vcgencmd display_power 0
