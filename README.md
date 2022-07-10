@@ -7,3 +7,4 @@ All the code written while studying at FontysICT, HBO Bachelor.
 **S2-Infrastructure:** All the code written during the second semester.<br />
 **S3-Infrastructure:** All the code written during the third semester.<br />
 **S4-CyberSecurity:** All the code written during the fourth semester.<br />
+**S6-Infrastructure:** All the code written during the sixth semester.<br />
