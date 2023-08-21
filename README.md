@@ -1,5 +1,7 @@
 <h1 align="center">This repository is archived and will not be maintained</h1>
+
 # FontysICT
+
 ## Info
 All the code written while studying at FontysICT, HBO Bachelor.
 
